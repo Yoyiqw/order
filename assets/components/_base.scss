@@ -1,0 +1,194 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+a.animated-button:link,
+a.animated-button:visited {
+    position: relative;
+    display: block;
+    margin: 30px auto 0;
+    padding: 14px 15px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    letter-spacing: .08em;
+    border-radius: 0;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+a.animated-button:link:after,
+a.animated-button:visited:after {
+    content: "";
+    position: absolute;
+    height: 0%;
+    left: 50%;
+    top: 50%;
+    width: 150%;
+    z-index: -1;
+    -webkit-transition: all 0.75s ease 0s;
+    -moz-transition: all 0.75s ease 0s;
+    -o-transition: all 0.75s ease 0s;
+    transition: all 0.75s ease 0s;
+}
+
+a.animated-button:link:hover,
+a.animated-button:visited:hover {
+    color: #FFF;
+    text-shadow: none;
+}
+
+a.animated-button:link:hover:after,
+a.animated-button:visited:hover:after {
+    height: 450%;
+}
+
+a.animated-button:link,
+a.animated-button:visited {
+    position: relative;
+    display: block;
+    margin: 30px auto 0;
+    padding: 14px 15px;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 0;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    letter-spacing: .08em;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+
+a.animated-button.thar-three {
+    padding: 20px 70px 19px 70px;
+    font-weight: 400;
+    font-size: 15px;
+    color: #fff;
+    background: #887569;
+    cursor: pointer;
+    display: block;
+    position: relative;
+    border: 1px solid #887569;
+    border-radius: 8px;
+    transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1) 0s;
+}
+
+a.animated-button.thar-three:hover {
+    color: #ffffff !important;
+    background-color: transparent;
+    text-shadow: nthree;
+}
+
+a.animated-button.thar-three:hover:before {
+    left: 0%;
+    right: auto;
+    width: 100%;
+}
+
+a.animated-button.thar-three:before {
+    display: block;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 100%;
+    width: 0px;
+    z-index: -1;
+    content: '';
+    color: #ffffff !important;
+    background: #373737;
+    transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1) 0s;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+label {
+    display: flex;
+    align-items: center;
+}
+
+
+label::before {
+    content: "";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 33px;
+    height: 33px;
+    vertical-align: middle;
+    margin-right: 19px;
+    transition: 0.3s;
+    border-radius: 8px;
+    border: 0.5px solid #887569;
+    font-size: 18px;
+    background-color: #F7F7F7;
+}
+
+input[type="checkbox"]:checked+label::before {
+    content: url(/assets/img/order/pin.svg);
+    text-align: center;
+}
+
+select{
+    appearance: none;
+}
+.select__wrapper{
+    position: relative;
+}
+.select__wrapper::before{
+    content: url(/assets/img/order/select.svg);
+    position: absolute;
+    top: 55%;
+    cursor: pointer;
+    right: 30px;
+    transform: translateY(-50%);
+    display: block;
+    width: 5.93px;
+    height: 11px;
+    pointer-events: none;
+}
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+button {
+    border: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
